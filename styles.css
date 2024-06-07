@@ -1,28 +1,28 @@
-* {
-    /* background-image: url("./Moverus\ Cabayer.png"); */
-    background-color: rgb(121, 51, 149)
-}
-
-header {
-    background-image: url("./header-img-pexels-258149.jpg");
-    background-repeat: no-repeat;
-    background-color: rgb(0,0,0,0.5);
-    /* background: rgba(144, 0, 255, 0.654); */
-    font: 2em sans-serif;
-}
-
-main {
-    background: rgba(98, 0, 255, 0.654);
-}
-
-footer {
-    background: rgba(25, 0, 255, 0.654);
+body {
+  background-color: rgba(74, 94, 100, 0.471);
 }
 
 h1 {
-    background: white;
+    font: 
 }
 
-#profile {
-    font: 10em helvetica;
+#top-section {
+    background-image: url("./header-pexels-258149.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header {
+    font-style: ;
+}
+
+#bottom-section {
+    background-image: url("./main-pexels-5273860.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+}
+
+footer {
 }
