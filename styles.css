@@ -16,6 +16,7 @@ h1 {
   background-image: url("./header-pexels-258149.jpg");
   background-position: center;
   background-size: cover;
+  min-width: 650px;
   /* -webkit-mask-image: -webkit-linear-gradient(
     bottom,
     rgba(0, 0, 0, 0),

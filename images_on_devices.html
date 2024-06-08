@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Device Specific Pages</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="page-top">
+      <a
+        id="nav-home-page"
+        onclick="testFunction()"
+        title="Test Button"
+        role="button"
+      >
+        Click me
+      </a>
+      <script>
+        function testFunction() {
+            document.getElementById("nav-home-page").textContent = 'test successful'
+        }
+      </script>
+    </section>
     <picture>
-        <source media="(min-width: 650px)" srcset="./boat-on">
+      <source
+        media="(min-width: 650px)"
+        srcset="./boat-on-lake-pexels-2166711.jpeg"
+      />
+      <img src="portrait-boat-on-lake-pexels-2166559.jpeg" />
     </picture>
-</body>
+  </body>
 </html>
