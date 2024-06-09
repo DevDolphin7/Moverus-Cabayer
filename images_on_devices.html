@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Device Specific Pages</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles_images_on_devices.css" />
   </head>
-  <body>
+
+  <body id="images-on-devices">
+
     <section id="page-top">
       <a
         id="nav-home-page"
@@ -18,16 +22,21 @@
       </a>
       <script>
         function testFunction() {
-            document.getElementById("nav-home-page").textContent = 'test successful'
+            document.getElementById("nav-home-page").textContent = 'test successful!'
         }
       </script>
     </section>
-    <picture>
+
+    <picture id="main-picture">
       <source
         media="(min-width: 650px)"
         srcset="./boat-on-lake-pexels-2166711.jpeg"
       />
       <img src="portrait-boat-on-lake-pexels-2166559.jpeg" />
     </picture>
+
+    <h1 id="heading-one">This is a heading!</h1>
+
   </body>
+
 </html>

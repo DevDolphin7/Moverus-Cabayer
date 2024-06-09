@@ -1,0 +1,16 @@
+#images-on-devices {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+    border-color: red;
+    border-width: 3px;
+  }
+
+#main-picture {
+    grid-template: 1 / 2;
+}
+
+#heading-one {
+    grid-template: 1 / -3;
+    background-color: aqua;
+}
