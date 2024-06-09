@@ -20,15 +20,12 @@
     /* Style a button */
     list-style: none; /* Remove bullet point */
     display: inline-block; /*  Could use grid or flexbox for example */
-    /*float: left;*/ /* Makes the whole button click-able! (Not just the text) */
     flex-flow: row nowrap;
     min-width: 120px;
 
     line-height: 60px;
     column-width: 140px;
     border-right: 3px solid #1e1e1e;
-
-    background-color: rgb(29, 219, 102);
 }
 
 #nav-bar-fullscreen ul li:hover {
@@ -50,4 +47,16 @@
     /* Style the text when hovering over */
     background-color: rgba(59, 180, 59, 0.822);
     color: #005bf7;
+}
+
+.wrapper {
+    margin: 0 15% 0 15%;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    padding: 1%;
+    background-color: aquamarine;
 }
