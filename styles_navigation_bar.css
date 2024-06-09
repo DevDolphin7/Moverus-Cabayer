@@ -1,0 +1,39 @@
+* {
+    /* Apply to the whole page */
+    margin: 0;
+    padding: 0;
+    background-color: #a3be98;
+}
+
+#nav-bar-fullscreen {
+    /* Separate nav tag for everything to be semantic :) */
+    background-color: rgb(64, 88, 224);
+}
+
+#nav-bar-fullscreen ul {
+    /* Style the whole nav bar */
+    background-color: rgb(225, 16, 221);
+}
+
+#nav-bar-fullscreen ul li {
+    /* Style a button */
+    display: flex;
+    list-style: none; /* Remove bullet point */
+    display: inline-block; /*  Could use grid or flexbox for example */
+    /*float: left;*/ /* Makes the whole button click-able! (Not just the text) */
+    background-color: rgb(29, 219, 102);
+    line-height: 60px;
+    column-width: 140px;
+    border-right: 3px solid #1e1e1e;
+    justify-content: space-evenly;
+}
+
+#nav-bar-fullscreen ul li a {
+    /* Style the text */
+    text-decoration: none; /* Removes link underline */
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1e;
+    background-color: aqua;
+    
+}
