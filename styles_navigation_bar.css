@@ -13,27 +13,41 @@
 #nav-bar-fullscreen ul {
     /* Style the whole nav bar */
     background-color: rgb(225, 16, 221);
+    margin-left: 5%
 }
 
 #nav-bar-fullscreen ul li {
     /* Style a button */
-    display: flex;
     list-style: none; /* Remove bullet point */
     display: inline-block; /*  Could use grid or flexbox for example */
     /*float: left;*/ /* Makes the whole button click-able! (Not just the text) */
-    background-color: rgb(29, 219, 102);
+    flex-flow: row nowrap;
+    min-width: 120px;
+
     line-height: 60px;
     column-width: 140px;
     border-right: 3px solid #1e1e1e;
-    justify-content: space-evenly;
+
+    background-color: rgb(29, 219, 102);
+}
+
+#nav-bar-fullscreen ul li:hover {
+    background-color: rgb(0, 255, 0);
 }
 
 #nav-bar-fullscreen ul li a {
     /* Style the text */
+    display: flex;
     text-decoration: none; /* Removes link underline */
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     color: #1e1e1e;
     background-color: aqua;
-    
+    justify-content: center;
+}
+
+#nav-bar-fullscreen ul li a:hover {
+    /* Style the text when hovering over */
+    background-color: rgba(59, 180, 59, 0.822);
+    color: #005bf7;
 }
