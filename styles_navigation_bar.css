@@ -8,12 +8,14 @@
 #nav-bar-fullscreen {
     /* Separate nav tag for everything to be semantic :) */
     background-color: rgb(64, 88, 224);
+    width: 100%;
+    /* position: fixed; */
 }
 
 #nav-bar-fullscreen ul {
     /* Style the whole nav bar */
     background-color: rgb(225, 16, 221);
-    margin-left: 5%
+    /* position: fixed; */
 }
 
 #nav-bar-fullscreen ul li {
@@ -50,7 +52,7 @@
 }
 
 .wrapper {
-    margin: 0 15% 0 15%;
+    margin: 60px 15% 0 15%;
 }
 
 h1 {
@@ -59,4 +61,8 @@ h1 {
     flex-flow: row nowrap;
     padding: 1%;
     background-color: aquamarine;
+}
+
+p {
+    font-size: 2em;
 }
