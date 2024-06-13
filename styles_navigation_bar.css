@@ -7,15 +7,20 @@
 
 #nav-bar-fullscreen {
     /* Separate nav tag for everything to be semantic :) */
-    background-color: rgb(64, 88, 224);
+    background-color: rgba(64, 88, 224, 0.626);
     width: 100%;
-    /* position: fixed; */
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: auto; */
 }
 
 #nav-bar-fullscreen ul {
     /* Style the whole nav bar */
-    background-color: rgb(225, 16, 221);
-    /* position: fixed; */
+    background-color: rgba(225, 16, 221, 0.409);
+    margin: 0 15% 0 15%;
 }
 
 #nav-bar-fullscreen ul li {
@@ -24,6 +29,7 @@
     display: inline-block; /*  Could use grid or flexbox for example */
     flex-flow: row nowrap;
     min-width: 120px;
+    background-color: rgba(182, 24, 24, 0.402);
 
     line-height: 60px;
     column-width: 140px;
@@ -31,7 +37,7 @@
 }
 
 #nav-bar-fullscreen ul li:hover {
-    background-color: rgb(0, 255, 0);
+    background-color: rgba(0, 30, 255, 0.204);
 }
 
 #nav-bar-fullscreen ul li a {
@@ -41,14 +47,14 @@
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     color: #1e1e1e;
-    background-color: aqua;
+    background-color: rgba(211, 183, 25, 0.116);
     justify-content: center;
 }
 
 #nav-bar-fullscreen ul li a:hover {
     /* Style the text when hovering over */
-    background-color: rgba(59, 180, 59, 0.822);
-    color: #005bf7;
+    background-color: rgb(144, 27, 173);
+    color: #d55a138f;
 }
 
 .wrapper {
