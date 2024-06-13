@@ -1,0 +1,99 @@
+:root {
+  /* Root applies to all classes in css */
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* -- defines a variable in css. If defined in root, it's available to every class */
+  /* These variables can always be overwritten locally in child classes if required! */
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  /* Adjust the scroll bar */
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  /* Adjust the track that is behind the thumb */
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* Adjust the scroll bar thumb (the bit you interact with) */
+  background: #6649b8;
+}
+
+.navbar {
+  background-color: #6649b8;
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: var(--bg-primary); /* Using the bg-rpimary variable */
+  transition: width 200ms ease; /* Slows the transition of width set by :hover to 200ms */
+}
+
+.navbar:hover {
+  width: 30%;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul:hover {
+  color: var(--bg-secondary);
+}
+
+.navbar ul a:last-child {
+  margin-top: auto;
+}
+
+.navbar ul a {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.navbar ul a:hover {
+  color: var(--text-secondary);
+}
+
+main {
+  /* Set margin on left to avoid content */
+  /* rem is a relative font size to the root definition (defined at the top!) */
+  /* 5 rem = 5 x 16 (defined in :root) = 80 px */
+  /* rem changed to % - easier to conceptualise. Also if you change font size, everthing would change! */
+  margin: 10% 5% 5% 15%;
+}
+
+h1 {
+  margin-top: 0;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  padding: 2.5% 100% 2.5% 0;
+  text-wrap: nowrap;
+}
+
+article {
+  margin-top: 10%;
+}
