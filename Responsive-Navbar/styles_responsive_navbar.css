@@ -5,15 +5,19 @@
 
   /* -- defines a variable in css. If defined in root, it's available to every class */
   /* These variables can always be overwritten locally in child classes if required! */
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --body-text: black;
+  --body-bg: white;
+  --transition-speed: 200ms;
+
+  --nav-text-primary: #b6b6b6;
+  --nav-text-secondary: #ececec;
+  --nav-bg-primary: #23232e;
+  --nav-bg-secondary: #141418;
 }
 
 body {
-  color: black;
-  background-color: white;
+  color: var(--body-text); /* Using the body-text variable */
+  background-color: var(--body-bg);
   margin: 0;
   padding: 0;
 }
@@ -34,17 +38,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-  background-color: #6649b8;
+  background-color: var(--nav-bg-primary);
   width: 10%;
   height: 100vh;
   position: fixed;
+  z-index: 1;
   top: 0;
-  background-color: var(--bg-primary); /* Using the bg-rpimary variable */
-  transition: width 200ms ease; /* Slows the transition of width set by :hover to 200ms */
+  transition: width var(--transition-speed) ease; /* Slows the transition of width set by :hover to 200ms */
 }
 
 .navbar:hover {
   width: 30%;
+}
+
+.navbar:hover ul li {
+  transform: rotate(360deg);
+  transition: transform calc(var(--transition-speed)*2);
 }
 
 .navbar ul {
@@ -58,7 +67,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar ul:hover {
-  color: var(--bg-secondary);
+  color: var(--nav-bg-secondary);
+
 }
 
 .navbar ul a:last-child {
@@ -66,15 +76,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar ul a {
-  display: flex;
   align-items: center;
   height: 3rem;
-  color: var(--text-primary);
+  color: var(--nav-text-primary);
   text-decoration: none;
 }
 
 .navbar ul a:hover {
-  color: var(--text-secondary);
+  color: var(--nav-text-secondary);
+}
+
+.navbar ul li {
+  align-items: center;
+  padding: 20px;
+  transform: rotate(0);
+  transition: transform calc(var(--transition-speed)*2);
 }
 
 main {
@@ -82,18 +98,18 @@ main {
   /* rem is a relative font size to the root definition (defined at the top!) */
   /* 5 rem = 5 x 16 (defined in :root) = 80 px */
   /* rem changed to % - easier to conceptualise. Also if you change font size, everthing would change! */
-  margin: 10% 5% 5% 15%;
+  margin: 10% 5% 5% 0%;
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0 0 0 5%;
   top: 0;
   position: fixed;
-  background-color: white;
-  padding: 2.5% 100% 2.5% 0;
+  background-color: rgb(224, 12, 12);
+  padding: 2.5% 100% 2.5% 10%;
   text-wrap: nowrap;
 }
 
 article {
-  margin-top: 10%;
+  margin: 15% 5% 5% 15%;
 }
