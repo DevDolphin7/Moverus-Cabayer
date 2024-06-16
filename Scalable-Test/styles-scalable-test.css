@@ -1,7 +1,59 @@
-main {
-    width: 90%;
-    margin: 0 auto;
+/* Proposed order for CSS lines: */
+/* display, z-index: */
+/* position:, top:, right:, bottom:, left: */
+/* width:, height: */
+/* margin:, padding: */
+/* color:, font: */
+/* background: */
+/* border:, border:radius: */
+
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  --nav-bg-color: 
+
+  /* Mobile only */
+  --nav-height: 90px;
 }
 
-@media (min-width: 475px) {
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+
+  width: 10%;
+  height: 100vh;
+}
+
+nav ul li svg {
+
+    display: flex;
+    justify-content: center;
+  width: 62px;
+  height: 62px;
+
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 3;
+}
+
+main {
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+@media (max-width: 475px) {
+nav {
+    height: var(--nav-height);
+}
+  nav ul a {
+    display: none;
+  }
+  
+  main {
+    margin-top: var(--nav-height);
+  }
 }
