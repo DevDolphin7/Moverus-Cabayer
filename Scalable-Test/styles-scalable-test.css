@@ -48,12 +48,14 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
 
 nav ul li svg {
   width: 62px;
   height: 62px;
+
+  --nav-svg-margin: calc((var(--nav-height) - 64px) / 2);
+  margin: var(--nav-svg-margin) 0 var(--nav-svg-margin) var(--nav-svg-margin);
 
   fill: lime;
   fill-rule: evenodd;
@@ -74,6 +76,7 @@ main {
     width: 100%;
     height: var(--nav-height);
   }
+
   nav ul a {
     display: none;
   }
