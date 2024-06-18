@@ -6,8 +6,11 @@
 /* color:, font: */
 /* background: */
 /* border:, border:radius: */
+/* animation */
 
 :root {
+  --transition-speed: 300ms;
+
   --nav-height: 90px; /* Mobile + Tablet only */
 
   --light-bg: #ffffff;
@@ -43,6 +46,7 @@ nav {
 /* color:, font: */
 /* background: */
 /* border:, border:radius: */
+/* animation */
 
 nav ul li {
   display: flex;
@@ -61,6 +65,15 @@ nav ul li svg {
   fill-rule: evenodd;
   stroke: purple;
   stroke-width: 3;
+
+  transform: rotate(0deg);
+  transition: transform calc(var(--transition-speed) * 2);
+}
+
+/* Making the drop down menu appear requires react - will be left for course front end learning! */
+nav ul li svg:hover {
+  transform: rotate(360deg);
+  transition: transform calc(var(--transition-speed) * 2);
 }
 
 main {
@@ -74,7 +87,13 @@ main {
     top: 0;
 
     width: 100%;
-    height: var(--nav-height);
+    height: calc(var(--nav-height) - 10px);
+
+    transition: height var(--transition-speed) ease;
+  }
+
+  nav:hover {
+    height: calc(var(--nav-height) + 10px);
   }
 
   nav ul a {
