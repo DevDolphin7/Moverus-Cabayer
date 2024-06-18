@@ -8,13 +8,19 @@
 /* border:, border:radius: */
 
 :root {
+  --nav-height: 90px; /* Mobile + Tablet only */
+
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 
-  --nav-bg-color: 
+  color-scheme: light dark;
+  --light-bg: #FFFFFF;
+  --light-secondary-bg: #F4F6FA;
+  --dark-bg: #1F2524;
+  --dark-secondary-bg: #252B2A;
+  --nav-bg: #3B334C;
+  --nav-secondary-bg: #4C425C;
 
-  /* Mobile only */
-  --nav-height: 90px;
 }
 
 nav {

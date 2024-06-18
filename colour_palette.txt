@@ -1,0 +1,11 @@
+white: #FFFFFF			|| Eerie black #1F2524
+Anti-flish white: #F4F6FA	|| Gunmetal #252B2A
+
+English Violet Light: #4C425C
+English Violet Dark: #3B334C
+
+Accent Posibilities:
+Field Drab Dark Pastel Green: #73683B
+Burnt sienna #C97C5D
+Teal #028090
+Xanthous #F7B32B
